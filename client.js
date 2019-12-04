@@ -20,9 +20,13 @@ const connect = function() {
   conn.write('Name: AFC');
 });
 
+
   conn.on('data', (data) => {
     console.log('Server says: ', data);
   });
+
+
+
 
   return conn;
 }
@@ -30,4 +34,4 @@ const connect = function() {
 console.log('Connecting ...');
 connect();
 
-module.exports , connect
+module.exports , 'connect'
