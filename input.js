@@ -39,9 +39,9 @@ if (key === 'd') { connection.write("Move: right")
 }
 if (key === 'a') { connection.write("Move: left")
 }
-
-  // \u0003 maps to ctrl+c input
-  if (key === '\u0003') {
+if (key === 'z') { connection.write("Plz")
+}
+if (key === '\u0003') {
     process.exit();
   }
 }
